@@ -1,0 +1,17 @@
+version: 0.1
+
+phases:
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - chmod +x ./gradlew
+      - ./gradlew build
+      #- mvn -T 2C clean install -Dmaven.test.skip -DskipTests -Dmaven.javadoc.skip=true -Dmaven.junit.fork=true -Dmaven.junit.jvmargs=-Xmx4096m
+
+cache:
+  path:
+    - '/root/.gradle/caches/**/*'
+
+artifacts:
+  files:
+    - '**/*'
