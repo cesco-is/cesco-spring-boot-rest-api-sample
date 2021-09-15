@@ -11,7 +11,7 @@ RUN cp /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 RUN echo "Asia/Seoul" > /etc/timezone
 
 # 빌드 스테이지에서 있던 jar 파일을 복사 한다.
-COPY ./build/libs/*.jar /app.jar
+COPY ./build/libs/spring-boot-app-sample-1.0.0.jar /app.jar
 
 # 헬스 체크 설정
 HEALTHCHECK \
