@@ -5,7 +5,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - chmod +x ./gradlew
-      - ./gradlew build
+      - ./gradlew clean build
       #- mvn -T 2C clean install -Dmaven.test.skip -DskipTests -Dmaven.javadoc.skip=true -Dmaven.junit.fork=true -Dmaven.junit.jvmargs=-Xmx4096m
 
 cache:
