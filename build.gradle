@@ -18,6 +18,10 @@ jar {
     enabled = false
 }
 
+bootJar {
+	archiveFileName  = "app.jar"
+}
+
 repositories {
 	mavenCentral()
 }
