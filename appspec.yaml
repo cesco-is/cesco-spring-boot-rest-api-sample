@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /ci/eks-rollout-sample-1.sh
-    destination: /tmp/경로
+    destination: /tmp/eks-sample
 hooks:
   ApplicationStop:
     - location: ci/eks-rollout-sample-1.sh
